@@ -1,0 +1,47 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* Encabezado con contador y total */
+.header-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.header-cart h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #4f46e5;
+}
+
+.cart-info {
+  display: flex;
+  gap: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Cuadrícula adaptable para las tarjetas de cursos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}

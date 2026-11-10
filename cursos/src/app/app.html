@@ -1,0 +1,18 @@
+<div class="container">
+  <header class="header-cart">
+    <h1>Lista de Cursos</h1>
+    <div class="cart-info">
+      <span>Inscritos: {{ inscritos.length }}</span>
+      <span>Total: Bs {{ total }}</span>
+    </div>
+  </header>
+
+  <main class="grid-productos">
+    @for (curso of cursos; track curso.id) {
+      <app-curso-card 
+        [curso]="curso" 
+        (inscribirse)="inscribirCurso($event)">
+      </app-curso-card>
+    }
+  </main>
+</div>
